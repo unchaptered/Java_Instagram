@@ -6,7 +6,7 @@ use netflix;
 
 DROP TABLE user;
 CREATE TABLE user (
- user_code SERIAL PRIMARY KEY NOT NULL,
+ user_code SERIAL PRIMARY KEY,
  user_id VARCHAR(500) UNIQUE NOT NULL,
  user_email TEXT NOT NULL,
  user_pw TEXT NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE user (
 
 DROP TABLE post;
 CREATE TABLE post (
- post_code SERIAL PRIMARY KEY NOT NULL,
+ post_code SERIAL PRIMARY KEY,
  post_text TEXT NOT NULL,
  post_tags TEXT NOT NULL,
  post_time DATE NOT NULL,
