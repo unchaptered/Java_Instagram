@@ -1,0 +1,28 @@
+유저						
+	기본 키		pk			
+	아이디		TEXT	로그인용	NOT NULL	
+	이메일		TEXT	로그인용	NOT NULL	
+	비밀번호		TEXT		NOT NULL	
+	닉네임		TEXT	찐텐	NOT NULL	
+	핸드폰번호		TEXT		NOT NULL	
+	생년월일		DATE		NOT NULL	공개/비공개
+	가입일자		DATE		NOT NULL	
+	팔로잉 리스트		FK		null	
+	팔로워 리스트		FK		null	
+	게시글 리스트		FK		null	
+						
+	쌍방향					
+게시물						
+	기본 키		pk			
+	게시글 작성자		FK		NOT NULL	
+	게시글 내용		TEXT		NOT NULL	
+	해시 태그		TEXT		null	
+	작성시간		DATE		NOT NULL	
+	좋아요		TEXT		null	[1000123]
+	댓글 리스트		FK		null	[1000123]
+						
+댓글						
+	기본 키		pk			
+	댓글 작성자		FK		NOT NULL	
+	댓글 내용		TEXT		NOT NULL	
+	작성 시간		DATE		NOT NULL	
