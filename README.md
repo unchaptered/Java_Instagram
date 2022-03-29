@@ -23,7 +23,7 @@ DTO, DAO 등의 비즈니스 로직과 정규표현식과 같은 유효성 검�
 
 RDBMS 인 MySQL 을 사용했으며, 2개의 Entity 를 만들었습니다.
 
-#### User Entity
+#### 1. User Entity
 
 ```sql
 CREATE TABLE user (
@@ -37,7 +37,7 @@ CREATE TABLE user (
 );
 ```
 
-#### Post Entity
+#### 2. Post Entity
 
 ```sql
 CREATE TABLE post (
